@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:images.unsplash.com)",
+      "WebFetch(domain:pexels.com)",
+      "WebFetch(domain:images.pexels.com)",
+      "Bash(mkdir -p apps/web/public/images*)",
+      "Bash(curl -fsSL -o apps/web/public/images/*)"
+    ]
+  }
+}

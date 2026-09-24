@@ -24,6 +24,9 @@ Závazná pravidla: `.specify/memory/constitution.md` – při rozporu platí ko
 - Každý text pro uživatele přes i18n (`t('...')`), výchozí jazyk `cs`.
 - Styly jen přes design tokeny v `apps/web/app/assets/css/main.css` (`@theme`); UI navrhovat
   a revidovat přes impeccable. Bez knihovny komponent – přístupnost řešit ručně (WCAG 2.2 AA).
+- Fotky: stock z Unsplash/Pexels, stažené do `apps/web/public/images/` (ne hotlink) přes
+  `curl -fsSL -o apps/web/public/images/<nazev>.jpg <url>`; zdroj (URL, autor) evidovat.
+  Obrázky bez rozpoznatelných osob, pokud to jde.
 - ESLint stylistic: bez středníků, jednoduché uvozovky, 2 mezery.
 - TypeScript je záměrně na 6.0.x – typescript-eslint zatím TS 7 nepodporuje.
 - Nové build skripty závislostí je nutné povolit v `allowBuilds` v `pnpm-workspace.yaml`.
