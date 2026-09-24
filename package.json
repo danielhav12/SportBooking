@@ -12,12 +12,6 @@
     "preview": "pnpm --filter web preview",
     "typecheck": "pnpm -r typecheck",
     "lint": "pnpm -r lint",
-    "lint:fix": "pnpm -r lint --fix",
-    "test": "pnpm -r test"
-  },
-  "devDependencies": {
-    "@nuxt/eslint-config": "^1.17.0",
-    "eslint": "catalog:",
-    "typescript": "catalog:"
+    "lint:fix": "pnpm -r lint --fix"
   }
 }

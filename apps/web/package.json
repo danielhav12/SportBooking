@@ -13,8 +13,6 @@
   },
   "dependencies": {
     "@nuxtjs/i18n": "^10.6.0",
-    "@sport/contracts": "workspace:*",
-    "@sport/domain": "workspace:*",
     "nuxt": "^4.5.2",
     "vue": "^3.5.43",
     "vue-router": "^5.3.1"
@@ -22,9 +20,9 @@
   "devDependencies": {
     "@nuxt/eslint": "^1.17.0",
     "@tailwindcss/vite": "^4.3.3",
-    "eslint": "catalog:",
+    "eslint": "^10.11.0",
     "tailwindcss": "^4.3.3",
-    "typescript": "catalog:",
+    "typescript": "~6.0.3",
     "vue-tsc": "^3.3.11"
   }
 }

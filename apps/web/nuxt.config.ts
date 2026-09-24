@@ -14,22 +14,10 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  runtimeConfig: {
-    public: {
-      // 'mock' | 'api' – selects the repository implementation (constitution principle I).
-      dataSource: 'mock',
-      apiBaseUrl: '',
-    },
-  },
-
   compatibilityDate: '2025-07-15',
 
   vite: {
     plugins: [tailwindcss()],
-  },
-
-  typescript: {
-    strict: true,
   },
 
   eslint: {

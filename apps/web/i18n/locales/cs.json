@@ -1,7 +1,6 @@
 {
   "app": {
-    "name": "Sportovní areál",
-    "tagline": "Rezervace sportovišť"
+    "name": "Sportovní areál"
   },
   "home": {
     "comingSoon": "Rezervační systém se připravuje."

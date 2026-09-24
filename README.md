@@ -17,33 +17,23 @@ pnpm dev          # http://localhost:3000
 
 ## Příkazy
 
-| Příkaz           | Popis                                 |
-| ---------------- | ------------------------------------- |
-| `pnpm dev`       | Dev server frontendu                  |
-| `pnpm build`     | Produkční build frontendu             |
-| `pnpm preview`   | Náhled produkčního buildu             |
-| `pnpm typecheck` | Kontrola typů ve všech balíčcích      |
-| `pnpm lint`      | ESLint ve všech balíčcích (`lint:fix`) |
-| `pnpm test`      | Vitest ve všech balíčcích             |
+| Příkaz           | Popis                                  |
+| ---------------- | -------------------------------------- |
+| `pnpm dev`       | Dev server frontendu                   |
+| `pnpm build`     | Produkční build frontendu              |
+| `pnpm preview`   | Náhled produkčního buildu              |
+| `pnpm typecheck` | Kontrola typů                          |
+| `pnpm lint`      | ESLint (`lint:fix` opraví, co jde)     |
 
 ## Struktura
 
 ```
 apps/
   web/              Nuxt 4 + Tailwind CSS 4 + @nuxtjs/i18n
-packages/
-  contracts/        Zod schémata, odvozené typy, repository rozhraní
-  domain/           Čistá doménová logika (sloty, ceny, kolize, storno)
 ```
 
-Závislosti vedou jedním směrem: `apps/*` → `packages/domain` → `packages/contracts`.
-Sdílené verze nástrojů (TypeScript, ESLint, Vitest) jsou v `catalog` v `pnpm-workspace.yaml`.
-
-## Data: mock vs. backend
-
-Stránky a komponenty čtou data jen přes repository rozhraní z `@sport/contracts`.
-Implementaci vybírá `NUXT_PUBLIC_DATA_SOURCE` (`mock` | `api`), viz `apps/web/.env.example`.
-Mock data jsou typované objekty v `apps/web/mocks/`.
+Monorepo je pnpm workspace. Sdílené balíčky (`packages/contracts`, `packages/domain`)
+a backend (`apps/api`) přibudou, až je bude potřebovat první feature.
 
 ## Pravidla projektu
 
