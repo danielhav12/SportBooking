@@ -1,0 +1,32 @@
+# Dependencies
+node_modules
+
+# Nuxt / build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+coverage
+
+# Tests
+test-results
+playwright-report
+
+# Logs
+logs
+*.log
+
+# Env
+.env
+.env.*
+!.env.example
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea
+.fleet
+.vscode/*
+!.vscode/extensions.json

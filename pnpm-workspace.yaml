@@ -1,0 +1,14 @@
+packages:
+  - apps/*
+  - packages/*
+
+# Shared tool versions – reference as "catalog:" in package.json.
+# TypeScript stays on 6.0.x until typescript-eslint and vue-tsc support TS 7.
+catalog:
+  eslint: ^10.11.0
+  typescript: ~6.0.3
+  vitest: ^5.0.1
+
+allowBuilds:
+  esbuild: true
+  unrs-resolver: true

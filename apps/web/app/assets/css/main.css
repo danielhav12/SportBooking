@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens (constitution principle III).
+ * Colours, typography and spacing are defined here once the design context
+ * is established with impeccable – no ad-hoc arbitrary values in components.
+ */
+@theme {
+}
